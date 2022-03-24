@@ -1,0 +1,41 @@
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+
+}
+body{
+    font-size: 15px;
+    color: var(--Very-Dark-Blue);
+}
+.bgcolor{
+    background: var(--Very-Light-Gray);
+}
+
+.formed{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.cards{
+    border-top: 3px solid var(--Cyan);
+    padding: 10px;
+    height: 200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 0 1em rgba(0,0,0,0.5);
+    width: 300px;
+}
+.cards-img{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
