@@ -1,11 +1,14 @@
 import requests
 from flask import Flask, flash, redirect, render_template, request, url_for
 from flask_sqlalchemy import SQLAlchemy
+from dotenv import load_dotenv
+load_dotenv()
+import os
 
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///weather.db'
-app.config['SECRET_KEY'] = "estherssecret"
+app.config['SECRET_KEY'] = "os.getenv(SECRET_KEY)"
 
 db = SQLAlchemy(app)
 
