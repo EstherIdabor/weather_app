@@ -19,7 +19,7 @@ class City(db.Model):
 def get_weather_data(city):
     url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid=1f7cf6754b5a9f95360e4832fa3c78f6'
     r = requests.get(url).json()
-    return r    
+    return r
 
 @app.route("/")
 def get_index():
